@@ -7,7 +7,7 @@ const server = express();
 const port = 4000;
 
 server.use(express.json());
-server.use(cors());
+server.use(cors()); // Stretch
 server.use("/api/posts", postRouter);
 
 server.get("/", (req, res) =>{
